@@ -186,5 +186,8 @@ for folder in target_folders:
     prune_out.finish()
     ft_out.finish()
 
-
+print(f"args.eval_seq: {args.eval_seq}")
+print(f"folder_eval_target: {folder_eval_target}")
+print(f"len(selected): {len(selected)}")
+print(f"len(data): {len(data)}")
 print("Done.")
