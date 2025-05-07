@@ -68,7 +68,7 @@ for folder in target_folders:
 
     folder_eval_target = args.eval_seq
     print(f"selected: {selected}")
-    num_sample_each_file = max(1, folder_eval_target // len(selected) + 1)
+    num_sample_each_file = 2 #fixed
     print("  sample from %d files, %d samples each, total %d" % (len(selected), num_sample_each_file, folder_eval_target))
     out = MDSWriter(
         columns={"tokens": "bytes", "set": "str"}, 
